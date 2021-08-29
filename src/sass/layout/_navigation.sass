@@ -1,14 +1,26 @@
 .nav
-  width: 17%
+  height: 10vh
+  width: 100%
   display: flex
-  justify-content: space-between
-  .nav__item
-    transition: 1s
-    color: $nav_text
-    font-size: 1rem
+  justify-content: space-around
+  .header__logo
+    font-size: 4rem
+    color: $header_logo
+  .nav__link
     display: flex
     align-items: center
-    &:hover
+    gap: 5%
+    font-size: 1rem
+    .link__item
       transition: 1s
-      color: $nav_text_active
-      
+      color: $nav_text
+      &:hover
+        transition: 1s
+        color: $nav_text_active
+@media all and (max-width: 1199px)
+  .nav
+    height: 5vh
+    .header__logo
+      font-size: 2rem
+    .nav__link
+      font-size: 0.75rem

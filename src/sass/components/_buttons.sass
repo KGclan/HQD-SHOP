@@ -1,0 +1,19 @@
+.default-btn
+  margin-top: 5%
+  background: $header_btn
+  width: 249px
+  height: 53px
+  border: none
+  box-shadow: 0px 0px 35px $header_btn, inset 0px 0px 5px $header_btn
+  transition: 1s
+  &:hover
+    transition: 1s
+    background: $header_btn_hover
+    box-shadow: 0px 0px 35px $header_btn_hover, inset 0px 0px 5px $header_btn_hover
+  .default-btn__text
+    color: $header_text
+@media all and (max-width: 993px)
+  .default-btn
+    width: 200px
+    height: 33px
+    font-size: 0.9rem

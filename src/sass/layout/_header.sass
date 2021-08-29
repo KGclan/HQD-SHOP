@@ -3,10 +3,16 @@
   font-style: normal
   font-weight: normal
   display: flex
-  justify-content: space-around
-  align-items: center
-  height: 10vh
+  flex-direction: column
+  height: 70vh
   background: $header_color
-  .header__logo
-    font-size: 4rem
-    color: $header_logo
+
+@media all and (max-width: 993px)
+  .header
+    height: 55vh
+@media all and (max-width: 769px)
+  .header
+    height: 50vh
+@media all and (max-width: 567px)
+  .header
+    height: auto

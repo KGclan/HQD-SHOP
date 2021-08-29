@@ -1,0 +1,56 @@
+.header-inner
+  height: 100%
+  background: $header_inner
+  .row
+    height: 100%
+    .header-inner__text
+      display: flex
+      flex-direction: column
+      align-items: center
+      justify-content: center
+      .text__title
+        font-size: 2.5rem
+        color: $header_text
+        .title__span
+          color: $header_span
+      .text__body
+        font-size: 1rem
+        color: $header_text
+        .body__span
+          color: $header_span
+    .header-inner__img
+      display: flex
+      justify-content: flex-end
+      .img__item
+        max-height: 476px
+        max-width: 100%
+@media all and (max-width: 993px)
+  .header-inner
+    .row
+      .header-inner__text
+        .text__title
+          font-size: 2rem
+        .text__body
+          font-size: 0.8rem
+@media all and (max-width: 768px)
+  .header-inner
+    .row
+      .header-inner__text
+        .text__title
+          font-size: 1.6rem
+        .text__body
+          font-size: 0.7rem
+@media all and (max-width: 575px)
+  .header-inner
+    .row
+      .header-inner__text
+        margin-top: 5%
+        .text__title
+          text-align: center
+          font-size: 1.6rem
+        .text__body
+          font-size: 0.7rem
+          text-align: center
+      .header-inner__img
+        justify-content: center
+        .img__item
