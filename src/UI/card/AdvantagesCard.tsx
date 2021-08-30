@@ -9,7 +9,7 @@ interface AdvantegesCardProps {
 
 function AdvantegesCard({ height, width, title, body }:AdvantegesCardProps ) {
   return(
-    <div className="card">
+    <div className="card col-xl-4 col-12">
       <div className="advanteges-card" style={{width, height}}>
         <h1 className="advanteges-card__title">{title}</h1>
         <p className="advanteges-card__body">{body}</p>
