@@ -1,8 +1,8 @@
-import React from "react"
+import React, { FC } from "react"
 import { Link } from "react-router-dom"
 import Button from "../UI/button/Button"
 
-function HeaderInner() {
+const HeaderInner: FC = () => {
   return(
     <div className="header-inner">
       <div className="container">

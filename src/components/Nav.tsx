@@ -1,8 +1,8 @@
-import React from "react"
+import React, { FC } from "react"
 import { Dropdown } from "react-bootstrap"
 import { Link } from "react-router-dom"
 
-function Nav() {
+const Nav: FC = () => {
   return(
     <nav className="nav">
       <Link className="header__logo" to="main">

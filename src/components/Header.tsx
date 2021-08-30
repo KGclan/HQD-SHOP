@@ -1,9 +1,9 @@
-import React from "react"
+import React, { FC } from "react"
 import { Link } from "react-router-dom"
 import HeaderInner from "./HeaderInner"
 import Nav from "./Nav"
 
-function Header() {
+const Header: FC = () => {
   return(
     <header className="header">
       <Nav />

@@ -1,11 +1,35 @@
-.advanteges-card
-  background: $advanages_card_main
-  text-align: center
-  color: $advanages_card_text
-  .advanteges-card__title
-    padding-top: 45px
-    font-size: 2rem
-  .advanteges-card__body
-    padding: 10px 49px 0px 49px
-    font-family: Ruda
-    font-size: 1rem
+.card
+  background: $advanteges_bg
+  .advanteges-card
+    position: relative
+    background: $advanages_card_main
+    text-align: center
+    color: $advanages_card_text
+    z-index: 1
+    .advanteges-card__title
+      padding-top: 45px
+      font-size: 2rem
+    .advanteges-card__body
+      padding: 10px 49px 0px 49px
+      font-family: Ruda
+      font-size: 1rem
+  .advanteges-frame
+    position: absolute
+    top: 5%
+    left: 5%
+    background: $advanteges-frame
+    z-index: 0
+@media all and (max-width: 1199px)
+  .card
+    .advanteges-card
+      height: 300px
+      width: 200px
+      .advanteges-card__title
+        padding-top: 45px
+        font-size: 2rem
+      .advanteges-card__body
+        padding: 10px 49px 0px 49px
+        font-family: Ruda
+        font-size: 1rem
+    .advanteges-frame
+

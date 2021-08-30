@@ -9,9 +9,12 @@ interface AdvantegesCardProps {
 
 function AdvantegesCard({ height, width, title, body }:AdvantegesCardProps ) {
   return(
-    <div className="advanteges-card" style={{width, height}}>
-      <h1 className="advanteges-card__title">{title}</h1>
-      <p className="advanteges-card__body">{body}</p>
+    <div className="card">
+      <div className="advanteges-card" style={{width, height}}>
+        <h1 className="advanteges-card__title">{title}</h1>
+        <p className="advanteges-card__body">{body}</p>
+      </div>
+      <div className="advanteges-frame" style={{width, height}}></div>
     </div>
   )
 }
